@@ -1,0 +1,54 @@
+body {
+    margin: 5%;
+    text-align: center;
+    background: #FEAC5E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1,
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+img {
+    height: 210px;
+    width: 250px;
+    margin: 4%;
+    transition: width 2s, height 4s;
+    border: 1px solid black;
+    box-shadow: 5px 5px 4px rgb(88, 87, 87);
+}
+
+img:hover {
+    transform: skew(20deg);
+    animation: shake 2s infinite;
+    animation-direction: alternate;
+    height: 300px;
+    width: 300px;
+    box-shadow: 10px 10px 5px rgb(252, 255, 69);
+    border-radius: 40px 15px 40px;
+    border: 2px solid rgb(238, 233, 233);
+}
+
+@keyframes shake {
+    0% {
+        transform: skewX(20deg);
+    }
+    100% {
+        transform: skewY(-20deg);
+    }
+}
